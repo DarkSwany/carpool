@@ -16,7 +16,7 @@ public class DBConnection {
     private DatabaseReference db;
     private User currentUser;
     private DataSnapshot userDataSnapshot;
-    private DataSnapshot groupsSnapshot;
+    private DataSnapshot carPoolsSnapshot;
 
     public DBConnection() {
         this.db = FirebaseDatabase.getInstance().getReference();
@@ -37,10 +37,11 @@ public class DBConnection {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
+                setCarPoolsSnapshot(dataSnapshot.child("CarPools"));
                 setUserDataSnapshot(dataSnapshot.child("Users"));
                 DataSnapshot userSnap = dataSnapshot.child("Users").child(userKey);
                 currentUser = userSnap.child(userKey).getValue(User.class);
-
+                setCurrentUser(currentUser);
             }
 
             @Override
@@ -51,6 +52,18 @@ public class DBConnection {
             }
         };
         db.addValueEventListener(readDB);
+    }
+
+    public void createCarpool(CarPool carPool){
+        db.child("CarPools").child(carPool.getUuid()).setValue(carPool);
+    }
+
+    public ArrayList<CarPool> getCarpools(){
+        ArrayList<CarPool> list = new ArrayList<CarPool>();
+        for (DataSnapshot child: carPoolsSnapshot.getChildren()){
+            list.add(child.getValue(CarPool.class));
+        }
+        return list;
     }
 
     public void setCurrentUser(User u) {
@@ -67,5 +80,9 @@ public class DBConnection {
 
     public DataSnapshot getUserDataSnapshot() {
         return userDataSnapshot;
+    }
+
+    public void setCarPoolsSnapshot(DataSnapshot d){
+        carPoolsSnapshot = d;
     }
 }
