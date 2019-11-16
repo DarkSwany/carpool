@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "328578193867",
+    "firebase_url": "https://hackathon-carpool.firebaseio.com",
+    "project_id": "hackathon-carpool",
+    "storage_bucket": "hackathon-carpool.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328578193867:android:9f93208a495fe65fe73e4e",
+        "android_client_info": {
+          "package_name": "com.example.carpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328578193867-o9ecs7qjt84qfsp6lvlf0jdepgv4an0a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carpool",
+            "certificate_hash": "170c10da09157d8297c55425ab225fac6232825f"
+          }
+        },
+        {
+          "client_id": "328578193867-g28u1jusjmtfk6qun17214s844etfrt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkPDqcPbJIzCSmSBf5diQog0IcQadVge0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328578193867-g28u1jusjmtfk6qun17214s844etfrt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
