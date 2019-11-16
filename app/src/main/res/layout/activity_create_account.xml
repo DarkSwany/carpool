@@ -5,6 +5,7 @@
     android:id="@+id/activity_create_account"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/abbey"
     tools:context=".CreateAccount">
 
     <LinearLayout
@@ -22,31 +23,35 @@
             android:layout_width="match_parent"
             android:layout_height="143dp"
             android:text="Create An Account"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#FFFFFF" />
 
         <EditText
-            android:id="@+id/nameBox"
+            android:id="@+id/Location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Name"
             android:inputType="textPersonName"
-            android:hint="Name" />
+            android:textColor="#FFFFFF" />
 
         <EditText
             android:id="@+id/emailBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Email"
             android:inputType="textWebEmailAddress"
-            android:hint="Email" />
+            android:textColor="#FFFFFF" />
 
         <EditText
             android:id="@+id/passwordBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Password"
             android:inputType="textWebPassword"
-            android:hint="Password" />
+            android:textColor="#FFFFFF" />
 
         <EditText
             android:id="@+id/phoneNumber"
@@ -61,8 +66,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Number of seats in car"
             android:inputType="text"
-            android:hint="Number of seats in car" />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/submitButton"

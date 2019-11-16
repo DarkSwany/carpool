@@ -20,7 +20,7 @@ public class User {
         this.setFirstName(firstName);
         this.phoneNumber = phoneNumber;
         this.carSize = carSize;
-        this.currentCarpoolID = UUID.randomUUID().toString();
+        this.currentCarpoolID = "No current carpool";
     }
 
     /*creates a key for a user object based on their email.
@@ -63,5 +63,9 @@ public class User {
         return carSize;
     }
     public String getCurrentCarpoolID(){ return currentCarpoolID;}
+
+    public void setCurrentCarpoolID(String currentCarpoolID){
+        this.currentCarpoolID = currentCarpoolID;
+    }
 }
 

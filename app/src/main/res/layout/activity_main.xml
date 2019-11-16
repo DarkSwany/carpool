@@ -18,7 +18,8 @@
             android:layout_marginEnd="173dp"
             android:layout_marginRight="173dp"
             android:text="Log On"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#F8F5F5" />
 
         <TextView
             android:id="@+id/errorMessage"
@@ -30,16 +31,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Username"
             android:inputType="textEmailAddress"
-            android:hint="Username" />
+            android:textColor="#F3F3F3" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Password"
             android:inputType="textPassword"
-            android:hint="Password" />
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/logOnbutton"

@@ -1,19 +1,25 @@
 package com.example.carpool.DataTypes;
 
-import java.util.Date;
+import java.util.UUID;
 
 public class CarPool {
     private String location;
-    private Date date;
+    private String date;
     private int seatNumber;
     private String carOwner;
+    private String phoneNumber;
+    private String name;
+    private String uuid;
 
 
-    public CarPool(String location, Date date, int seatNumber, String carOwner) {
+    public CarPool(String location, String date, int seatNumber, String carOwner, String phoneNumber, String name) {
         this.location = location;
         this.date = date;
         this.seatNumber = seatNumber;
         this.carOwner = carOwner;
+        this.phoneNumber = phoneNumber;
+        this.name = name;
+        this.uuid = UUID.randomUUID().toString();
     }
 
 
@@ -56,7 +62,7 @@ public class CarPool {
     /**
      * @return the date
      */
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
@@ -64,7 +70,7 @@ public class CarPool {
     /**
      * @param date the date to set
      */
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -101,7 +107,17 @@ public class CarPool {
     }
 
 
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getUuid() {
+        return uuid;
+    }
 
 
 }
