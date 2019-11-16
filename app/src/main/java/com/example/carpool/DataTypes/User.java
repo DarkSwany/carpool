@@ -4,6 +4,7 @@ import com.google.api.services.calendar.model.Event;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class User {
     private String email;
@@ -11,17 +12,15 @@ public class User {
     private String firstName;
     private String phoneNumber;
     private int carSize;
-    private int carCurrentCapacity;
     private String currentCarpoolID;
 
-    public User(String firstName, String email, String password, String phoneNumber, int carSize, int carCurrentCapacity, String currentCarpoolID){
+    public User(String firstName, String email, String password, String phoneNumber, int carSize){
         this.setEmail(email);
         this.setPassword(password);
         this.setFirstName(firstName);
         this.phoneNumber = phoneNumber;
         this.carSize = carSize;
-        this.carCurrentCapacity = carCurrentCapacity;
-        this.currentCarpoolID = currentCarpoolID;
+        this.currentCarpoolID = UUID.randomUUID().toString();
     }
 
     /*creates a key for a user object based on their email.
@@ -62,9 +61,6 @@ public class User {
     }
     public int getCarSize() {
         return carSize;
-    }
-    public int getCarCapacity() {
-        return carCurrentCapacity;
     }
     public String getCurrentCarpoolID(){ return currentCarpoolID;}
 }

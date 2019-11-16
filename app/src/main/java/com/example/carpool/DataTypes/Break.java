@@ -3,12 +3,12 @@ package com.example.carpool.DataTypes;
 import java.util.ArrayList;
 
 public class Break {
-    ArrayList<CarPool> carPools;
+    ArrayList<String> carPoolKey;
     String breakName;
 
-    public Break(String breakName, ArrayList<CarPool> carPools) {
+    public Break(String breakName, ArrayList<String> carPools) {
         this.breakName = breakName;
-        this.carPools = carPools;
+        this.carPoolKey = carPools;
     }
 
 
@@ -20,16 +20,16 @@ public class Break {
     /**
      * @return the carPools
      */
-    public ArrayList<CarPool> getCarPools() {
-        return carPools;
+    public ArrayList<String> getCarPools() {
+        return carPoolKey;
     }
 
 
     /**
      * @param carPools the carPools to set
      */
-    public void setCarPools(ArrayList<CarPool> carPools) {
-        this.carPools = carPools;
+    public void setCarPools(ArrayList<String> carPools) {
+        this.carPoolKey = carPools;
     }
 
 

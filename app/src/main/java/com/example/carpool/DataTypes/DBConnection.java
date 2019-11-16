@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import static android.content.ContentValues.TAG;
 
 public class DBConnection {
-    private static DatabaseReference db;
+    private DatabaseReference db;
     private User currentUser;
     private DataSnapshot userDataSnapshot;
     private DataSnapshot groupsSnapshot;
@@ -21,8 +21,6 @@ public class DBConnection {
     public DBConnection() {
         this.db = FirebaseDatabase.getInstance().getReference();
     }
-
-    public static DatabaseReference getDBRef(){return db;}
 
     /*Adds a new user entry in the database. Takes a pre-made user as a parameter.
      * The user is stored in the database as "Users/userKey/userObject"

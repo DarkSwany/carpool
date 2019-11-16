@@ -1,58 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/abbey">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/events"
-
-        android:layout_width="286dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="57dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginTop="402dp"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-        android:text="View Breaks"
-        android:textColor="#030303"
-        android:textSize="50sp"
-        android:typeface="monospace" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="330dp"
-        android:layout_height="171dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="81dp"
-        android:layout_marginTop="74dp"
-        android:text="Welcome, Name Here"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        app:fontFamily="serif" />
-
-    <Button
-        android:id="@+id/logOutButton"
-        android:layout_width="75dp"
-        android:layout_height="42dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:text="Log Out"
-        android:textColor="#FFFFFF" />
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
